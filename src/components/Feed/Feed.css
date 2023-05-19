@@ -1,0 +1,13 @@
+.slim-pagination .page-item {
+    margin: 0.03rem;
+  }
+  
+  .slim-pagination .page-link {
+    width: 4.75rem;
+    padding: 0.75rem;
+    font-size: 1.25rem;
+  }
+  
+  .slim-pagination .page-link:hover {
+    background-color: #00000000;
+  }

@@ -1,0 +1,149 @@
+.card-post{
+  background-color: rgba(255, 255, 255, 0.35);
+  text-decoration: none;
+}
+.card-body-post {
+  position: relative;
+  font-size: 17.5px;
+  border-radius: 7px;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.5s ease-in-out;
+  height: 100%; 
+}
+
+.content{
+  margin-right: 18.5rem;
+  word-spacing: 1.75px;
+  color: black;
+}
+
+.img-cont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.pic {
+  object-fit: cover;
+  border-radius: 12.5%;
+  height: 9rem;
+  width: 12rem;
+  max-height: 62.5%; 
+  max-width: 62.5%;
+  position: absolute;
+  top: 50%;
+  right: 1.25rem;
+  transform: translateY(-50%);
+  transition: transform .7s;
+}
+
+.pic:hover {
+  transform-origin: center center;
+  transform: scale(1.5) translateY(-32.5%) translateX(-13.5%);
+  top: 50%;
+}
+
+
+  .card-body-post:hover, .card-body-post:focus {
+    text-decoration: none;
+    background-color: #F5F5DC; 
+    background: rgba(245, 245, 220, 0.47); 
+    border-color: #dee2e6;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+    transform: translateY(-7px);
+  }
+  
+  .the_link {
+    color: blue;
+    text-decoration: none;
+    position: relative;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
+  }
+  .the_link:hover {
+    color: blue;
+    border-bottom: 2px solid blue;
+    padding-bottom: 2px;
+  }
+  .the_link:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    transition: width 0.2s ease-in-out;
+  }
+  .the_link:hover:after {
+    width: 100%;
+  }
+
+  .like-btn{
+    padding: 0.75rem;
+    color: #484848;
+  }
+
+  .custom-icon {
+    font-size: 1.75rem; 
+  }
+
+  .like{
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+  }
+
+  .dislike{
+    margin-left: 0.65rem;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .disabled{
+    color: aliceblue;
+  }
+  
+  @media (max-width: 768px) {
+    .pic {
+      right: 0;
+      left: 0;
+      width: 100%;
+      height: 50vh;
+      border-radius: 0;
+      object-fit: contain;
+    }
+  }
+  .title{
+    margin-right: 18.35rem;
+    font-family: cursive;  
+    font-size: 1.75rem;
+    font-weight: bold;
+    line-height: 1.20;
+    color: #333;
+    text-shadow: 1px 1px 2px #999;
+    padding: 7px;
+    padding-bottom: 2px;
+    /* border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); */
+  }
+  
+  @media (max-width: 768px) {
+    .card-body {
+      margin-top: 0;
+    }
+    .pic {
+      position: static;
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 300px; /* or any other suitable value */
+    }
+  }
+  
+  

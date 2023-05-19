@@ -1,0 +1,10 @@
+body{
+    /* background: linear-gradient(rgba(33,37,41,1) 10%, rgba(33,37,41,0.23) 100%), url(../resources/background.jpg) center; */
+    background: linear-gradient(57deg, #FFCC70 0%, #eea2a2 20%, #bbc1bf 35%, #57c6e1 60%, #b49fda 80%, #7ac5d8 100%);
+}
+
+.page-item.active .page-link{
+    background-color: #121212!important;
+    border-color: #121212!important;
+
+}

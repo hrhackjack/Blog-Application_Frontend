@@ -1,0 +1,46 @@
+/* reset styles */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+/* global styles */
+:root {
+  --primary-color: #0077ff;
+  --secondary-color: #333333;
+  --font-family: 'Open Sans', sans-serif;
+  --font-size-base: 1rem;
+  --line-height-base: 1.5;
+  --spacing-unit: 0.5rem;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  color: var(--secondary-color);
+}
+
+a {
+  color: var(--primary-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin: var(--spacing-unit) 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 var(--spacing-unit);
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 var(--spacing-unit);
+  }
+}
