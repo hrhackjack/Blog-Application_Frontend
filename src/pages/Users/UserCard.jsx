@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { BASE_URL } from "../../services/helper"
 import "./UserCard.css"
-import { Card, CardImg, CardBody, CardTitle, CardSubtitle, Button, NavLink } from 'reactstrap';
+import { Card, CardImg, CardBody, CardTitle, CardSubtitle, Button} from 'reactstrap';
 import { FollowButton } from '../../components/Follow';
 import { getCurrentUserDetail } from '../../auth'
 import { Link } from 'react-router-dom';
@@ -14,6 +14,8 @@ function UserCard(props) {
   const [following, setFollowing] = useState([]);
 
   const currentUser = useMemo(() => getCurrentUserDetail(), []);
+
+  // console.log(currentUser)
 
   useEffect(() => {
     const storedFollowStatus = localStorage.getItem(`followStatus_${currentUser.id}_${id}`);
